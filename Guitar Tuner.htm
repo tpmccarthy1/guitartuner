@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0120)file:///Users/tommccarthy/Sites/guitartuner/index.html?string6=e3&string5=a3&string4=d4&string3=g4&string2=b4&string1=e5 -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Guitar Tuner</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./Guitar Tuner_files/base.css">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body class="wrapper">
+    	<header><h1>Guitar Tuner</h1></header>
+    	<div class="wrapper-body">
+    	<main class="content">
+    	<form>
+    		<div class="string">
+    			<h3>6th</h3>
+    			<ul>
+    				<li><input type="radio" name="string6" id="c#2" value="assets/c-sharp-2.mp3">
+     				<label for="c3">C</label></li> 
+     				<li><input type="radio" name="string6" id="c#2" value="assets/c-sharp-2.mp3">
+     				<label for="c#3">C#3</label></li>	
+     				
+    				<li><input type="radio" name="string6" id="c#2" value="assets/c-sharp-2.mp3">
+     				<label for="d3">D3</label></li>	
+     				
+    				<li><input type="radio" name="string6" id="d2" value="assets/d-0.mp3">
+     				<label for="d#3">D#3</label></li>	
+     				
+    				<li><input type="radio" name="string6" id="e3" value="e3" checked="">
+     				<label for="e3">E</label></li>	
+     				<li><input type="radio" name="string6" id="e" value="f">
+     				<label for="f3">F</label></li>
+     				<li class="submit"><button onclick="playString(6);return false;">Play</button><button onclick="stopString(); return false;">Stop</button></li>
+
+    		</ul></div>
+    		<div class="string">
+    			<h3>5th</h3>
+    			<ul>
+    				<li><input type="radio" name="string5" id="f#3" value="assets/f-sharp-3.mp3">
+     				<label for="g3">G</label></li>		
+     				<li><input type="radio" name="string5" id="f#3" value="assets/f-sharp-3.mp3">
+     				<label for="g3">G</label></li>	
+     				<li><input type="radio" name="string5" id="f#3" value="assets/f-sharp-3.mp3">
+     				<label for="g3">G</label></li>	
+    				<li><input type="radio" name="string5" id="f#2" value="assets/f-sharp-3.mp3">
+     				<label for="g3">G</label></li>	
+    				<li><input type="radio" name="string5" id="g2" value="assets/g-1.mp3">
+     				<label for="g#3">G#3</label></li>	
+    				<li><input type="radio" name="string5" id="a3" value="a3" checked="">
+     				<label for="a3">A</label></li>	
+     			
+     				<li class="submit"><button onclick="playString(5);return false;">Play</button><button onclick="stopString(); return false;">Stop</button></li>	
+    			</ul>
+    		</div>
+    		<div class="string">
+    			<h3>4th</h3>
+    			<ul>
+    				<li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3">
+     				<label for="b2">B2</label></li><li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3">
+     				<label for="b2">B2</label></li><li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3">
+     				<label for="b2">B2</label></li>
+    				<li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3">
+     				<label for="b2">B2</label></li>
+    				<li><input type="radio" name="string4" id="c3" value="assets/c-3.mp3">
+     				<label for="c3">C3</label></li>
+    				<li><input type="radio" name="string4" id="d4" value="d4" checked="">
+     				<label for="d4">D</label></li>
+     				<li class="submit"><button onclick="playString(4);return false;">Play</button><button onclick="stopString(); return false;">Stop</button></li>		
+    			</ul>
+    		</div>
+    		<div class="string">
+    			<h3>3rd</h3>
+    			<ul>
+    				<li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3">
+     				<label for="e3">E3</label></li><li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3">
+     				<label for="e3">E3</label></li><li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3">
+     				<label for="e3">E3</label></li>
+    				<li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3">
+     				<label for="e3">E3</label></li>
+    				<li><input type="radio" name="string3" id="f3" value="assets/f-3.mp3">
+     				<label for="f3">F3</label></li>
+    				<li><input type="radio" name="string3" id="g4" value="g4" checked="">
+     				<label for="g4">G</label></li>	
+     				<li class="submit"><button onclick="playString(3);return false;">Play</button><button onclick="stopString(); return false;">Stop</button></li>	
+    			</ul>
+    		</div>
+    		<div class="string">
+    			<h3>2nd</h3>
+    			<ul>
+    				<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3">
+     				<label for="a4">A3</label></li>	<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3">
+     				<label for="a4">A3</label></li>	<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3">
+     				<label for="a4">A3</label></li>	
+    				<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3">
+     				<label for="a4">A3</label></li>	
+    				<li><input type="radio" name="string2" id="a4" value="assets/a-4.mp3">
+     				<label for="a4">A3</label></li>	
+    				<li><input type="radio" name="string2" id="b4" value="b4" checked="">
+     				<label for="b4">B</label></li>	
+     				<li class="submit"><button onclick="playString(2);return false;">Play</button><button onclick="stopString(); return false;">Stop</button></li>	
+    			</ul>
+    		</div>
+    		<div class="string">
+    				<h3>1st</h3>
+    				<ul>
+    					<li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3">
+	     				<label for="c#4">C#4</label></li><li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3">
+	     				<label for="c#4">C#4</label></li><li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3">
+	     				<label for="c#4">C#4</label></li>
+    					<li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3">
+	     				<label for="c#4">C#4</label></li>	
+    					<li><input type="radio" name="string1" id="d4" value="assets/d-5.mp3">
+	     				<label for="d4">D4</label></li>	
+	    				<li><input type="radio" name="string1" id="e5" value="e5" checked="">
+	     				<label for="e5">E</label></li>	
+	     				<li class="submit"><button onclick="playString(1);return false;">Play</button><button onclick="stopString(); return false;">Stop</button></li>	
+    				</ul>
+    		</div>
+    		<div class="options">
+    				<label for="presets"> Preset Tunings:</label>
+					<select id="presets">
+					  <optgroup label="presets">
+					    <option value="1">Standard</option>
+					    <option value="2">Drop D</option>
+					    <option value="3">Half Step Down</option>
+					    <option value="4">Full Step Down</option>
+					</optgroup></select>
+					<button onclick="presetTune(); return false">Submit</button>
+    		</div>
+
+    		<div class="volume options">
+    				<label for="volume">Volume:</label>
+					<input id="input_range_id" type="range" min="0" max="50" value="25" step="5">
+    		</div>
+  
+    	</form>
+    	</main>
+    	<nav class="nav"> </nav>
+    	<aside class="sidebar"></aside>
+    	</div>
+
+    
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+      
+        <script src="./Guitar Tuner_files/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="./Guitar Tuner_files/main.js"></script>
+    
+</body></html>
