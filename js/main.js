@@ -1,80 +1,171 @@
-//Create array of radio buttons
-
-var buttons = document.getElementsByTagName("input");
+document.addEventListener("DOMContentLoaded", function(e) { 
 
 
 //Create array of notes for each string.
+var snd = ["e2", "a2", "d3", "g3", "b3", "e4"];
 
-var snd = [];
-var audio;
-
-function getRadioValue(){
-snd.length = 0;
-for (var i=0; i < buttons.length; i++){
-   if (buttons[i].checked){
-      snd.push("assets/"+buttons[i].value+".wav");
-  		}
+//Initialize audio variable
+var audio = new Audio();
+//Set initial volume
+audio.volume = 50/100;
+// Volume slider
+var volumeSlider = document.getElementById("volumeslider");
+function setVolume(){
+	var volume = document.querySelector(('input[name="slider"]')).value;
+	audio.volume = volume/100;
+	console.log(volume);
     }
-}
+volumeslider.addEventListener("mousemove", setVolume);
 
-//Preset tunings
+//String variables
+var string6 = document.getElementById("string6");
+var string5 = document.getElementById("string5");
+var string4 = document.getElementById("string4");
+var string3 = document.getElementById("string3");
+var string2 = document.getElementById("string2");
+var string1 = document.getElementById("string1");
 
-//Note variables preset tunings;
 
-var e = document.getElementById("e3");
-var a = document.getElementById("a3");
-var d = document.getElementById("d");
-var g = document.getElementById("g");
-var g = document.getElementById("b");
-var e5 = document.getElementById("e5");
-var d2 = document.getElementById("d2");
+//Boxes to display active note
+var box6 = document.getElementById("box6");
+var box5 = document.getElementById("box5");
+var box4 = document.getElementById("box4");
+var box3 = document.getElementById("box3");
+var box2 = document.getElementById("box2");
+var box1 = document.getElementById("box1");
 
-function presetTune(){
+
+// Event listeners for each string
+string6.addEventListener("click", function(e) {
+	// Display active note and load sound into array
+	if(e.target && e.target.nodeName == "INPUT") {
+		snd.splice(0, 1, e.target.value);
+		// display value
+		box6.innerText = e.target.value.substring(0, 1).toUpperCase();
+	}
+	//Play sound
+	if(e.target && e.target.nodeName == "BUTTON") {
+		audio.src = 'assets/'+snd[0]+".mp3";
+	    audio.play();
+	}
+});
+
+string5.addEventListener("click", function(e) {
+	// Display active note and load sound into array
+	if(e.target && e.target.nodeName == "INPUT") {
+		// display value
+		box5.innerText = e.target.value.substring(0, 1).toUpperCase();
+		snd.splice(1, 1, e.target.value);
+	}
+	//Play sound
+	if(e.target && e.target.nodeName == "BUTTON") {
+		audio.src = 'assets/'+snd[1]+".mp3";
+	    audio.play();
+	}
+});
+
+string4.addEventListener("click", function(e) {
+	// Display active note and load sound into array
+	if(e.target && e.target.nodeName == "INPUT") {
+		// display value
+		box4.innerText = e.target.value.substring(0, 1).toUpperCase();
+		snd.splice(2, 1, e.target.value);
+	}
+	//Play sound
+	if(e.target && e.target.nodeName == "BUTTON") {
+		audio.src = 'assets/'+snd[2]+".mp3";
+	    audio.play();
+	}
+});
+
+string3.addEventListener("click", function(e) {
+	// Display active note and load sound into array
+	if(e.target && e.target.nodeName == "INPUT") {
+		// display value
+		box3.innerText = e.target.value.substring(0, 1).toUpperCase();
+		snd.splice(3, 1, e.target.value);
+	}
+	//Play sound
+	if(e.target && e.target.nodeName == "BUTTON") {
+		audio.src = 'assets/'+snd[3]+".mp3";
+	    audio.play();
+	}
+});
+
+string2.addEventListener("click", function(e) {
+	// Display active note and load sound into array
+	if(e.target && e.target.nodeName == "INPUT") {
+		// display value
+		box2.innerText = e.target.value.substring(0, 1).toUpperCase();
+		snd.splice(4, 1, e.target.value);
+	}
+	//Play sound
+	if(e.target && e.target.nodeName == "BUTTON") {
+		audio.src = 'assets/'+snd[4]+".mp3";
+	    audio.play();
+	}
+});
+
+string1.addEventListener("click", function(e) {
+	// Display active note and load sound into array
+	if(e.target && e.target.nodeName == "INPUT") {
+		// display value
+		box1.innerText = e.target.value.substring(0, 1).toUpperCase();
+		snd.splice(5, 0, e.target.value);
+	}
+	//Play sound
+	if(e.target && e.target.nodeName == "BUTTON") {
+		audio.src = 'assets/'+snd[5]+".mp3";
+	    audio.play();
+	}
+});
+
+
+//Preset tunings switch statement
+
 	var presets = document.getElementById("presets");
-	var value = presets.options[presets.selectedIndex].value;
-	if(value === "1"){
-		e.checked = true;
-		a.checked = true;
-		d.checked = true;
-		g.checked = true;
-		b.checked = true;
-		e5.checked = true;
-	}else if(value === "2"){
-		d2.checked = true;
-		a.checked = true;
-		d.checked = true;
-		g.checked = true;
-		b.checked = true;
-		e5.checked = true;
-	}
-}
+	var btn = document.getElementById("submitpreset");
+
+	btn.addEventListener("click", function(){
+		var value = presets.options[presets.selectedIndex].value;
+		switch (value) {
+		case "std":
+			document.getElementById('str6e2').click();
+			document.getElementById('str5a2').click();
+			document.getElementById('str4d3').click();
+			document.getElementById('str3g3').click();
+			document.getElementById('str2b3').click();
+			document.getElementById('str1e4').click();
+			break;
+		case "dropd":
+			document.getElementById('str6d2').click();
+			document.getElementById('str5a2').click();
+			document.getElementById('str4d3').click();
+			document.getElementById('str3g3').click();
+			document.getElementById('str2b3').click();
+			document.getElementById('str1e4').click();
+			break;
+		case "halfstep":
+			document.getElementById('str6ds2').click();
+			document.getElementById('str5gs2').click();
+			document.getElementById('str4cs3').click();
+			document.getElementById('str3fs3').click();
+			document.getElementById('str2as3').click();
+			document.getElementById('str1ds4').click();
+			break;
+		case "fullstep":
+			document.getElementById('str6d2').click();
+			document.getElementById('str5g2').click();
+			document.getElementById('str4c3').click();
+			document.getElementById('str3f3').click();
+			document.getElementById('str2a3').click();
+			document.getElementById('str1d4').click();
+			break;
+		}
+
+	})
+
+
 	
-//Function to play selected notes
-
-
-function playString(s){
-	getRadioValue();
-	if(s === 6 ){
-		var audio = new Audio(snd[0]);
-	} else if(s === 5){
-		var audio = new Audio(snd[1]);
-	} else if(s === 4){
-		var audio = new Audio(snd[2]);
-	} else if(s === 3){
-		var audio = new Audio(snd[3]);
-	} else if(s === 2){
-		var audio = new Audio(snd[4]);
-	} else if(s === 1){
-		var audio = new Audio(snd[5]);
-	}
-	audio.play()
-	
-}
-
-function stopString(){
-	audio.pause();
-}
-
-
-
+});
 

@@ -15,137 +15,268 @@
     </head>
     <body class="wrapper">
     	<header><h1>Guitar Tuner</h1></header>
-    	<div class="wrapper-body">
     	<main class="content">
-    	<form>
     		<div class="string">
     			<h3>6th</h3>
-    			<ul>
-    				<li><input type="radio" name="string6" id="c#2" value="assets/c-sharp-2.mp3" />
-     				<label for="c3">C</label></li> 
-     				<li><input type="radio" name="string6" id="c#2" value="assets/c-sharp-2.mp3" />
-     				<label for="c#3">C#3</label></li>	
+    			<ul id="string6">
+                    <li class="string6"><input type="radio" name="string6" id="str6b2" value="B2" />
+                    <label for="str6b2">B2</label></li> 
+                    <li><input type="radio" name="string6" id="str6as2" value="as2" />
+                    <label for="str6as2">A#2</label></li> 
+    				<li><input type="radio" name="string6" id="str6a2" value="a2" />
+     				<label for="str6a2">A2</label></li> 
+     				<li><input type="radio" name="string6" id="str6gs2" value="gs2" />
+     				<label for="str6gs2">G#2</label></li>	
      				</li>
-    				<li><input type="radio" name="string6" id="c#2" value="assets/c-sharp-2.mp3" />
-     				<label for="d3">D3</label></li>	
+    				<li><input type="radio" name="string6" id="str6g2" value="g2" />
+     				<label for="str6g2">G2</label></li>	
      				</li>
-    				<li><input type="radio" name="string6" id="d2" value="assets/d-0.mp3" />
-     				<label for="d#3">D#3</label></li>	
+    				<li><input type="radio" name="string6" id="str6fs2" value="fs2" />
+     				<label for="str6fs2">F#2</label></li>	
      				</li>
-    				<li><input type="radio" name="string6" id="e3" value="e3" checked/>
-     				<label for="e3">E</label></li>	
-     				<li><input type="radio" name="string6" id="e" value="f" />
-     				<label for="f3">F</label></li>
-     				<li class="submit"><button onclick = "playString(6);return false;">Play</button><button onclick = "stopString(); return false;">Stop</button></li>
-
+    				<li><input type="radio" name="string6" id="str6f2" value="f2" />
+     				<label for="6f2">F2</label></li>	
+     				<li><input type="radio" name="string6" id="str6e2" value="e2" checked/>
+     				<label for="str6e2">E2</label></li>
+                    <li><input type="radio" name="string6" id="str6ds2" value="ds2" />
+                    <label for="str6ds2">D#2</label></li>
+                    <li><input type="radio" name="string6" id="str6d2" value="d2" />
+                    <label for="str6d2">D2</label></li>
+                    <li><input type="radio" name="string6" id="str6cs2" value="cs2" />
+                    <label for="str6cs2">C#2</label></li>
+                    <li><input type="radio" name="string6" id="str6c2" value="c2" />
+                    <label for="str6cs2">C2</label></li>
+                    <li><input type="radio" name="string6" id="str6b1" value="b1" />
+                    <label for="str6b1">B1</label></li>
+                    <li><input type="radio" name="string6" id="str6as1" value="as1" />
+                    <label for="str6as1">A#1
+                    </label></li>
+                    <li><input type="radio" name="string6" id="str6a1" value="a1" />
+                    <label for="str6a1">A1</label></li>
+                    <li id="box6">E</li>
+     				<li class="submit"><button id="str6">Play</button></li>
     		</div>
     		<div class="string">
     			<h3>5th</h3>
-    			<ul>
-    				<li><input type="radio" name="string5" id="f#3" value="assets/f-sharp-3.mp3" />
-     				<label for="g3">G</label></li>		
-     				<li><input type="radio" name="string5" id="f#3" value="assets/f-sharp-3.mp3" />
-     				<label for="g3">G</label></li>	
-     				<li><input type="radio" name="string5" id="f#3" value="assets/f-sharp-3.mp3" />
-     				<label for="g3">G</label></li>	
-    				<li><input type="radio" name="string5" id="f#2" value="assets/f-sharp-3.mp3" />
-     				<label for="g3">G</label></li>	
-    				<li><input type="radio" name="string5" id="g2" value="assets/g-1.mp3" />
-     				<label for="g#3">G#3</label></li>	
-    				<li><input type="radio" name="string5" id="a3" value="a3" checked/>
-     				<label for="a3">A</label></li>	
-     			
-     				<li class="submit"><button onclick = "playString(5);return false;">Play</button><button onclick = "stopString(); return false;">Stop</button></li>	
+    			<ul id="string5">
+    				<li><input type="radio" name="string5" id="str5e3" value="e3" />
+                    <label for="str5e3">E3</label></li> 
+                    <li><input type="radio" name="string5" id="str5ds3" value="ds3" />
+                    <label for="str5ds3">D#3</label></li> 
+                    <li><input type="radio" name="string5" id="str5d3" value="d3" />
+                    <label for="str5d3">D3</label></li> 
+                    <li><input type="radio" name="string5" id="str5cs3" value="cs3" />
+                    <label for="str5cs3">C#3</label></li>   
+                    </li>
+                    <li><input type="radio" name="string5" id="str5c3" value="c3" />
+                    <label for="str5c3">C3</label></li> 
+                    </li>
+                    <li><input type="radio" name="string5" id="str5b2" value="b2" />
+                    <label for="str5b2">B2</label></li>   
+                    </li>
+                    <li><input type="radio" name="string5" id="str5as2" value="as2" />
+                    <label for="str5as2">A#2</label></li>    
+                    <li><input type="radio" name="string5" id="str5a2" value="a2" checked/>
+                    <label for="str5a2">A2</label></li>
+                    <li><input type="radio" name="string5" id="str5gs2" value="gs2" />
+                    <label for="str5gs2">G#2</label></li>
+                    <li><input type="radio" name="string5" id="str5g2" value="g2" />
+                    <label for="str5g2">G2</label></li>
+                    <li><input type="radio" name="string5" id="str5fs2" value="fs2" />
+                    <label for="str5fs2">F#2</label></li>
+                    <li><input type="radio" name="string5" id="str5f2" value="f2" />
+                    <label for="str5f2">F2</label></li>
+                    <li><input type="radio" name="string5" id="str5e2" value="e2" />
+                    <label for="str5e2">D2</label></li>
+                    <li><input type="radio" name="string5" id="str5ds2" value="ds2" />
+                    <label for="str5ds2">D#2</label></li>
+                    <li><input type="radio" name="string5" id="str5d2" value="d2" />
+                    <label for="str5d2">D2</label></li>
+     			    <li id="box5">A</li>
+     				<li class="submit"><button id="string5">Play</button></li>	
     			</ul>
     		</div>
     		<div class="string">
     			<h3>4th</h3>
-    			<ul>
-    				<li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3" />
-     				<label for="b2">B2</label></li><li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3" />
-     				<label for="b2">B2</label></li><li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3" />
-     				<label for="b2">B2</label></li>
-    				<li><input type="radio" name="string4" id="b2" value="assets/b-4.mp3" />
-     				<label for="b2">B2</label></li>
-    				<li><input type="radio" name="string4" id="c3" value="assets/c-3.mp3" />
-     				<label for="c3">C3</label></li>
-    				<li><input type="radio" name="string4" id="d4" value="d4" checked/>
-     				<label for="d4">D</label></li>
-     				<li class="submit"><button onclick = "playString(4);return false;">Play</button><button onclick = "stopString(); return false;">Stop</button></li>		
+    			<ul id="string4">
+    				<li><input type="radio" name="string4" id="str4a3" value="a3" />
+                    <label for="str4a3">A3</label></li> 
+                    <li><input type="radio" name="string4" id="str4gs3" value="gs3" />
+                    <label for="str4gs3">G#3</label></li> 
+                    <li><input type="radio" name="string4" id="str4g3" value="g3" />
+                    <label for="str4g3">G3</label></li> 
+                    <li><input type="radio" name="string4" id="str4fs3" value="fs3" />
+                    <label for="str4fs3">F#3</label></li>   
+                    </li>
+                    <li><input type="radio" name="string4" id="str4f3" value="f3" />
+                    <label for="str4f3">F3</label></li> 
+                    </li>
+                    <li><input type="radio" name="string4" id="str4e3" value="e3" />
+                    <label for="str4e3">E3</label></li>   
+                    </li>
+                    <li><input type="radio" name="string4" id="str4ds3" value="ds3" />
+                    <label for="str4ds3">D#3</label></li>    
+                    <li><input type="radio" name="string4" id="str4d3" value="d3" checked/>
+                    <label for="str4d3">D3</label></li>
+                    <li><input type="radio" name="string4" id="str4cs3" value="cs3" />
+                    <label for="str4cs3">C#3</label></li>
+                    <li><input type="radio" name="string4" id="str4c3" value="c3" />
+                    <label for="str4c3">C3</label></li>
+                    <li><input type="radio" name="string4" id="str4b2" value="b2" />
+                    <label for="str4b2">B2</label></li>
+                    <li><input type="radio" name="string4" id="str4as2" value="as2" />
+                    <label for="str4a2">A#2</label></li>
+                    <li><input type="radio" name="string4" id="str4a2" value="a2" />
+                    <label for="str4a2">A2</label></li>
+                    <li><input type="radio" name="string4" id="str4gs2" value="gs2" />
+                    <label for="str4gs2">G#2</label></li>
+                    <li><input type="radio" name="string4" id="str4g2" value="g2" />
+                    <label for="str4g2">G2</label></li> 
+                    <li id="box4">D</li>
+     				<li><button id="string4">Play</button></li>		
     			</ul>
     		</div>
     		<div class="string">
     			<h3>3rd</h3>
-    			<ul>
-    				<li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3" />
-     				<label for="e3">E3</label></li><li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3" />
-     				<label for="e3">E3</label></li><li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3" />
-     				<label for="e3">E3</label></li>
-    				<li><input type="radio" name="string3" id="e3" value="assets/e-0.mp3" />
-     				<label for="e3">E3</label></li>
-    				<li><input type="radio" name="string3" id="f3" value="assets/f-3.mp3" />
-     				<label for="f3">F3</label></li>
-    				<li><input type="radio" name="string3" id="g4" value="g4" checked/>
-     				<label for="g4">G</label></li>	
-     				<li class="submit"><button onclick = "playString(3);return false;">Play</button><button onclick = "stopString(); return false;">Stop</button></li>	
+    			<ul id="string3">
+    				<li><input type="radio" name="string3" id="str3d4" value="d4" />
+                    <label for="str3d4">D4</label></li> 
+                    <li><input type="radio" name="string3" id="str3cs4" value="cs4" />
+                    <label for="str3cs4">C#4</label></li> 
+                    <li><input type="radio" name="string3" id="str3c4" value="c4" />
+                    <label for="str3c4">C4</label></li> 
+                    <li><input type="radio" name="string3" id="str3b3" value="b3" />
+                    <label for="str3b3">B3</label></li>   
+                    </li>
+                    <li><input type="radio" name="string3" id="str3as3" value="as3" />
+                    <label for="str4as3">A#3</label></li> 
+                    </li>
+                    <li><input type="radio" name="string3" id="str4a3" value="a3" />
+                    <label for="str3a3">A3</label></li>   
+                    </li>
+                    <li><input type="radio" name="string3" id="str3gs3" value="gs3" />
+                    <label for="str3gs3">G#3</label></li>
+                    <li><input type="radio" name="string3" id="str3g3" value="g3" checked/>
+                    <label for="str3g3">G3</label></li>      
+                    <li><input type="radio" name="string3" id="str3fs3" value="fs3" />
+                    <label for="str3fs3">F#3</label></li>
+                    <li><input type="radio" name="string3" id="str3f3" value="f3" />
+                    <label for="str3f3">F3</label></li>
+                    <li><input type="radio" name="string3" id="str3e3" value="e3" />
+                    <label for="str3e3">E3</label></li>
+                    <li><input type="radio" name="string3" id="str3ds3" value="ds3" />
+                    <label for="str3ds3">D#3</label></li>
+                    <li><input type="radio" name="string3" id="str3d3" value="d3" />
+                    <label for="str3d3">D3</label></li>
+                    <li><input type="radio" name="string3" id="str3cs3" value="cs3" />
+                    <label for="str3cs3">C#3</label></li>
+                    <li><input type="radio" name="string3" id="str3c3" value="c3" />
+                    <label for="str3c3">C3</label></li>
+                    <li id="box3">G</li>
+     				<li><button id="string3">Play</button></li>	
     			</ul>
     		</div>
     		<div class="string">
     			<h3>2nd</h3>
-    			<ul>
-    				<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3" />
-     				<label for="a4">A3</label></li>	<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3" />
-     				<label for="a4">A3</label></li>	<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3" />
-     				<label for="a4">A3</label></li>	
-    				<li><input type="radio" name="string2" id="g#e" value="assets/g-sharp-1.mp3" />
-     				<label for="a4">A3</label></li>	
-    				<li><input type="radio" name="string2" id="a4" value="assets/a-4.mp3" />
-     				<label for="a4">A3</label></li>	
-    				<li><input type="radio" name="string2" id="b4" value="b4" checked/>
-     				<label for="b4">B</label></li>	
-     				<li class="submit"><button onclick = "playString(2);return false;">Play</button><button onclick = "stopString(); return false;">Stop</button></li>	
+    			<ul id="string2">
+    				<li><input type="radio" name="string2" id="str2fs4" value="fs4" />
+                    <label for="str2fs4">F#4</label></li> 
+                    <li><input type="radio" name="string2" id="str2f4" value="f4" />
+                    <label for="str2f4">F4</label></li> 
+                    <li><input type="radio" name="string2" id="str2e4" value="e4" />
+                    <label for="str2e4">E4</label></li> 
+                    <li><input type="radio" name="string2" id="str2ds4" value="ds4" />
+                    <label for="str2ds4">D#4</label></li>   
+                    </li>
+                    <li><input type="radio" name="string2" id="str2d4" value="d4" />
+                    <label for="str2d4">D4</label></li> 
+                    </li>
+                    <li><input type="radio" name="string2" id="str2cs4" value="cs4" />
+                    <label for="str2cs4">C#4</label></li>   
+                    </li>
+                    <li><input type="radio" name="string2" id="str2c4" value="c4" />
+                    <label for="str2c4">C4</label></li>
+                    <li><input type="radio" name="string2" id="str2b3" value="b3" checked/>
+                    <label for="str2b3">B3</label></li>      
+                    <li><input type="radio" name="string2" id="str2as3" value="as3" />
+                    <label for="str2as3">A#3</label></li>
+                    <li><input type="radio" name="string2" id="str2a3" value="a3" />
+                    <label for="str2a3">A3</label></li>
+                    <li><input type="radio" name="string2" id="str2gs3" value="gs3" />
+                    <label for="str2gs3">G#3</label></li>
+                    <li><input type="radio" name="string2" id="str2g3" value="g3" />
+                    <label for="str2g3">G3</label></li>
+                    <li><input type="radio" name="string2" id="str2fs3" value="fs3" />
+                    <label for="str2fs3">F#3</label></li>
+                    <li><input type="radio" name="string2" id="str2f3" value="f3" />
+                    <label for="str2f3">F3</label></li>
+                    <li><input type="radio" name="string2" id="str2e3" value="e3" />
+                    <label for="str2e3">E3</label></li>	
+                    <li id="box2">B</li>
+     				<li><button id="string2">Play</button></li>	
     			</ul>
     		</div>
     		<div class="string">
     				<h3>1st</h3>
-    				<ul>
-    					<li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3" />
-	     				<label for="c#4">C#4</label></li><li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3" />
-	     				<label for="c#4">C#4</label></li><li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3" />
-	     				<label for="c#4">C#4</label></li>
-    					<li><input type="radio" name="string1" id="c#4" value="assets/c-sharp-2.mp3" />
-	     				<label for="c#4">C#4</label></li>	
-    					<li><input type="radio" name="string1" id="d4" value="assets/d-5.mp3" />
-	     				<label for="d4">D4</label></li>	
-	    				<li><input type="radio" name="string1" id="e5" value="e5" checked/>
-	     				<label for="e5">E</label></li>	
-	     				<li class="submit"><button onclick = "playString(1);return false;">Play</button><button onclick = "stopString(); return false;">Stop</button></li>	
+    				<ul id="string1">
+    				<li><input type="radio" name="string1" id="str1b4" value="b4" />
+                    <label for="str1b4">B4</label></li> 
+                    <li><input type="radio" name="string1" id="str1as4" value="as4" />
+                    <label for="str1as4">A#4</label></li> 
+                    <li><input type="radio" name="string1" id="str1a4" value="a4" />
+                    <label for="str1a4">A4</label></li> 
+                    <li><input type="radio" name="string1" id="str1gs4" value="gs4" />
+                    <label for="str1gs4">G#4</label></li>   
+                    </li>
+                    <li><input type="radio" name="string1" id="str1g4" value="g4" />
+                    <label for="str1g4">G4</label></li> 
+                    </li>
+                    <li><input type="radio" name="string1" id="str1fs4" value="fs4" />
+                    <label for="str1fs4">F#4</label></li>   
+                    </li>
+                    <li><input type="radio" name="string1" id="str1f4" value="f4" />
+                    <label for="str1f4">F4</label></li>
+                    <li><input type="radio" name="string1" id="str1e4" value="e4" checked/>
+                    <label for="str1e4">E4</label></li> 
+                    <li><input type="radio" name="string1" id="str1ds4" value="ds4" />
+                    <label for="str1ds4">D#4</label></li>      
+                    <li><input type="radio" name="string1" id="str1d4" value="d4" />
+                    <label for="str1d4">D4</label></li>
+                    <li><input type="radio" name="string1" id="str1cs4" value="cs4" />
+                    <label for="str1cs4">C#4</label></li>
+                    <li><input type="radio" name="string1" id="str1c4" value="c4" />
+                    <label for="str1c4">C4</label></li>
+                    <li><input type="radio" name="string1" id="str1b3" value="b3" />
+                    <label for="str1b3">B3</label></li>
+                    <li><input type="radio" name="string1" id="str1as3" value="as3" />
+                    <label for="str1as3">A#3</label></li>
+                    <li><input type="radio" name="string1" id="str1a3" value="a3" />
+                    <label for="str1a3">A3</label></li>
+                    <li id="box1">E</li>
+	     			<li class="submit"><button id="string1">Play</button></li>	
     				</ul>
     		</div>
+  
     		<div class="options">
     				<label for="presets"> Preset Tunings:</label>
 					<select id="presets">
 					  <optgroup label="presets">
-					    <option value="1">Standard</option>
-					    <option value="2">Drop D</option>
-					    <option value="3">Half Step Down</option>
-					    <option value="4">Full Step Down</option>
+					    <option value="std">Standard</option>
+					    <option value="dropd">Drop D</option>
+					    <option value="halfstep">Half Step Down</option>
+					    <option value="fullstep">Full Step Down</option>
 					</select>
-					<button onclick = "presetTune(); return false">Submit</button>
+					<button id="submitpreset">Submit</button>
     		</div>
 
     		<div class="volume options">
     				<label for="volume">Volume:</label>
-					<input id="input_range_id" type="range" min="0" max="50" value="25" step="5" />
+					<input id="volumeslider" name="slider" type="range" min="0" max="100" value="50" step="1" />
     		</div>
-  
-    	</form>
-    	</main>
-    	<nav class="nav"> </nav>
-    	<aside class="sidebar"></aside>
-    	</div>
 
-    </div>
+    	</main>
+ 
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
