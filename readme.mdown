@@ -1,0 +1,10 @@
+Guitar Tuner
+------------
+
+Creator: 
+Tom McCarthy
+
+Tools: 
+HTML/CSS/JS
+
+A guitar tuner built with HTML, Javascript and CSS. 
