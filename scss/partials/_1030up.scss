@@ -1,0 +1,82 @@
+header{
+
+	
+}
+
+#app{
+	
+
+}
+
+.instructions{
+	display: none;
+}
+
+.d-instructions{
+	display: block;
+	line-height: 1.5em;
+	padding: 1em .5em;
+	background: #f7f6f5;
+	li{
+		padding: .5em 0;
+		&:last-child{}
+		padding-bottom: 0;
+	}
+}
+
+.wrap{
+	overflow: hidden;
+	padding-right: 0;
+}
+
+.components{
+	float: right;
+	padding-right: 0;
+	padding-bottom: 500em;
+	margin-bottom:-500em;
+	background: #f7f6f5;
+}
+
+.tuner{
+	padding-bottom: 500em;
+	margin-bottom:-500em;
+	
+}
+
+.string{
+	margin-bottom: 0;
+
+	h3{
+		
+	}
+	li{
+
+		
+	}
+	.notebox{
+	}
+	.submit{
+
+	}
+
+}
+
+.options{
+
+	
+}
+
+.volume{
+	display: block;
+	padding: 1em 0;
+	background: #f7f6f5;
+	color: #262626;
+	
+}
+
+#footer{
+clear: both;
+	h2{
+	
+	}
+}

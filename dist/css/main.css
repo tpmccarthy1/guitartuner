@@ -1,0 +1,441 @@
+/* Eric Meyer's CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   This is a Sass partial
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300, 400");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/******************************************************************
+Site Name: Guitar Tuner
+Author: Tom McCarthy
+
+Stylesheet: Grid Stylesheet
+
+******************************************************************/
+.last-col {
+  float: right;
+  padding-right: 0 !important; }
+
+/*
+Mobile Grid Styles
+These are the widths for the mobile grid.
+There are four types, but you can add or customize
+them however you see fit.
+*/
+@media (max-width: 767px) {
+  .m-all {
+    float: left;
+    padding-right: 0.75em;
+    width: 100%;
+    padding-right: 0; }
+  .m-1of2 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%; }
+  .m-1of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.33%; }
+  .m-2of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66%; }
+  .m-1of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%; }
+  .m-3of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%; } }
+
+/* Portrait tablet to landscape */
+@media (min-width: 768px) and (max-width: 1029px) {
+  .t-all {
+    float: left;
+    padding-right: 0.75em;
+    width: 100%;
+    padding-right: 0; }
+  .t-1of2 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%; }
+  .t-1of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.33%; }
+  .t-2of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66%; }
+  .t-1of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%; }
+  .t-3of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%; }
+  .t-1of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 20%; }
+  .t-2of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 40%; }
+  .t-3of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 60%; }
+  .t-4of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 80%; } }
+
+/* Landscape to small desktop */
+@media (min-width: 1030px) {
+  .d-all {
+    float: left;
+    padding-right: 0.75em;
+    width: 100%;
+    padding-right: 0; }
+  .d-1of2 {
+    float: left;
+    padding-right: 0.75em;
+    width: 50%; }
+  .d-1of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 33.33%; }
+  .d-2of3 {
+    float: left;
+    padding-right: 0.75em;
+    width: 66.66%; }
+  .d-1of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 25%; }
+  .d-3of4 {
+    float: left;
+    padding-right: 0.75em;
+    width: 75%; }
+  .d-1of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 20%; }
+  .d-2of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 40%; }
+  .d-3of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 60%; }
+  .d-4of5 {
+    float: left;
+    padding-right: 0.75em;
+    width: 80%; }
+  .d-1of6 {
+    float: left;
+    padding-right: 0.75em;
+    width: 16.6666666667%; }
+  .d-1of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 14.2857142857%; }
+  .d-2of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 28.5714286%; }
+  .d-3of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 42.8571429%; }
+  .d-4of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 57.1428572%; }
+  .d-5of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 71.4285715%; }
+  .d-6of7 {
+    float: left;
+    padding-right: 0.75em;
+    width: 85.7142857%; }
+  .d-1of8 {
+    float: left;
+    padding-right: 0.75em;
+    width: 12.5%; }
+  .d-1of9 {
+    float: left;
+    padding-right: 0.75em;
+    width: 11.1111111111%; }
+  .d-1of10 {
+    float: left;
+    padding-right: 0.75em;
+    width: 10%; }
+  .d-1of11 {
+    float: left;
+    padding-right: 0.75em;
+    width: 9.09090909091%; }
+  .d-1of12 {
+    float: left;
+    padding-right: 0.75em;
+    width: 8.33%; } }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: white url(../imgs/bg.png) top right repeat;
+  background-attachment: fixed; }
+
+#header {
+  padding-bottom: 1em;
+  background: #000;
+  float: none;
+  padding-right: 0;
+  margin: 0 auto; }
+  #header h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    padding-top: .5em; }
+
+#app {
+  background: #000;
+  margin: 0 auto;
+  float: none;
+  padding-right: 0;
+  color: #262626;
+  z-index: 1;
+  text-transform: uppercase; }
+
+.instructions {
+  line-height: 1.5em;
+  padding: 1em .5em;
+  background: #f7f6f5; }
+  .instructions li {
+    padding: .5em 0;
+    padding-bottom: 0; }
+
+.d-instructions {
+  display: none; }
+
+.tuner {
+  padding-right: 0; }
+
+.string {
+  display: inline-block;
+  padding-right: 0;
+  background: #999; }
+  .string h3 {
+    text-align: center;
+    padding: .5em 0;
+    border: 1px solid black; }
+  .string li {
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    padding: .5em;
+    border: 1px solid black;
+    background: #fff; }
+  .string .notebox {
+    font-size: 2.5em;
+    text-align: center;
+    padding: .25em;
+    background: #262626;
+    color: #f7f6f5; }
+  .string .submit {
+    padding: 0; }
+
+.options {
+  border-bottom: 1px solid black;
+  padding-top: .5em;
+  display: inline-block;
+  background: #131613;
+  text-align: center;
+  color: #f7f6f5; }
+  .options button {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #f7f6f5;
+    background: transparent;
+    border: solid 2px #f7f6f5; }
+    .options button:focus {
+      outline: none; }
+    .options button:hover {
+      border-radius: 15px;
+      transition: border-radius .5s ease; }
+
+.volume {
+  display: none; }
+
+#footer {
+  background: #000;
+  float: none;
+  clear: both;
+  padding-right: 0;
+  margin: 0 auto;
+  color: #f7f6f5;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300; }
+  #footer p {
+    padding: 2em 0; }
+  #footer h2 {
+    padding-top: 2em; }
+  #footer a {
+    text-decoration: none;
+    color: #f7f6f5; }
+    #footer a:hover {
+      text-decoration: underline; }
+
+.play {
+  padding: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 1.35em solid transparent;
+  border-bottom: 1.35em solid transparent;
+  border-left: 1.62em solid #262626;
+  margin: 2.7em auto;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  left: 0.27em; }
+  .play:before {
+    content: '';
+    position: absolute;
+    top: -2.025em;
+    left: -3.105em;
+    bottom: -2.025em;
+    right: -0.945em;
+    border-radius: 50%;
+    border: 0.27em solid #262626;
+    z-index: 2;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s; }
+  .play:after {
+    content: '';
+    opacity: 1;
+    transition: opacity 0.6s;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s; }
+  .play:hover, .play:focus {
+    outline: none; }
+    .play:hover:before, .play:focus:before {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1); }
+  .play.active {
+    outline: none;
+    border-color: transparent; }
+    .play.active:after {
+      content: '';
+      opacity: 1;
+      width: 1.35em;
+      height: 2.16em;
+      background: #262626;
+      position: absolute;
+      right: 0.135em;
+      top: -1.08em;
+      border-left: 0.54em solid #262626;
+      box-shadow: inset 0.81em 0 0 0 #f7f6f5; }
+
+@media only screen and (min-width: 768px) {
+  .string li {
+    font-size: 1em;
+    text-align: center; } }
+
+@media only screen and (min-width: 1030px) {
+  .instructions {
+    display: none; }
+  .d-instructions {
+    display: block;
+    line-height: 1.5em;
+    padding: 1em .5em;
+    background: #f7f6f5; }
+    .d-instructions li {
+      padding: .5em 0;
+      padding-bottom: 0; }
+  .wrap {
+    overflow: hidden;
+    padding-right: 0; }
+  .components {
+    float: right;
+    padding-right: 0;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+    background: #f7f6f5; }
+  .tuner {
+    padding-bottom: 500em;
+    margin-bottom: -500em; }
+  .string {
+    margin-bottom: 0; }
+  .volume {
+    display: block;
+    padding: 1em 0;
+    background: #f7f6f5;
+    color: #262626; }
+  #footer {
+    clear: both; } }

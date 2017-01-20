@@ -7,4 +7,4 @@ Tom McCarthy
 Tools: 
 HTML/CSS/JS
 
-A guitar tuner built with HTML, Javascript and CSS. 
+A guitar tuner built with HTML, vanilla Javascript and CSS. 
