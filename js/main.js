@@ -47,19 +47,19 @@ function tuner(index, box){
 		resetBtns();
 		
 	}
-//Function to play note
-function playNote(index, btn){
-		if(hasClass(btn, 'active')){
-		resetBtns();
-		}
-		else if(!hasClass(btn, 'active')){
-		resetBtns();
-		btn.classList.add('active');
-		audio.src = "assets/"+snd[index]+".mp3";
-		audio.play();
-		}  
+	//Function to play note
+	function playNote(index, btn){
+			if(hasClass(btn, 'active')){
+			resetBtns();
+			}
+			else if(!hasClass(btn, 'active')){
+			resetBtns();
+			btn.classList.add('active');
+			audio.src = "assets/"+snd[index]+".mp3";
+			audio.play();
+			}  
 
-	}
+		}
 
 	//Present tuning event
 	if(e.target && e.target.id == "submitpreset"){
